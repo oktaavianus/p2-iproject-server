@@ -35,7 +35,7 @@ class ControllerLogin {
         role: userFind.role
       })
     } catch(err) {
-      console.log(err);
+      // console.log(err);
       next(err)
     }
   }
