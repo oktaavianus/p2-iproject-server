@@ -50,5 +50,13 @@ OR
 {
   "message": "Password is required"
 }
+OR
+{
+  "message": "Address is required"
+}
+OR
+{
+  "message": "Phone Number is required"
+}
 ```
 &nbsp;
