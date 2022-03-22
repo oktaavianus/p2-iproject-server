@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Lahan Sawah di Sleman, Yogyakarta",
+    "description": "Di sewakan lahan sawah di daerah sleman yogyakarta",
+    "imgUrl": "https://bit.ly/3Jy62T3",
+    "UserId": 1,
+    "CategoryId": 1,
+    "status": "Active"
+  },
+  {
+    "name": "Pupuk Kandang Jogja",
+    "description": "Jual pupk kandang untuk area jogja",
+    "imgUrl": "https://bit.ly/3Ivz4BF",
+    "UserId": 1,
+    "CategoryId": 2,
+    "status": "Active"
+  },
+  {
+    "name": "Obat hama",
+    "description": "Jual obat hama untuk area jogja",
+    "imgUrl": "https://bit.ly/3iInzfL",
+    "UserId": 1,
+    "CategoryId": 3,
+    "status": "Active"
+  }
+]
