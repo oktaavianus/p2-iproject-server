@@ -10,7 +10,10 @@ const errorHandler = (err, req, res, next ) => {
     message = err.errors[0].message
   } else if (err.name === "JsonWebTokenError") {
     code = 401;
-    message = err.msg
+    message = err.message
+    if(err.message === "jwt malformed"){
+      message = "Invalid Token"
+    }
   } else if(err.name === "Unauthorized" ) {
     code = 401;
     message = err.msg
