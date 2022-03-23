@@ -44,13 +44,22 @@ const authorization = async (req, res, next) => {
       }
     }
 
-    if (UserId !== foundProduct.UserId) {
+    if(UserId === foundProduct.UserId || req.userCres.role === "Admin") {
+      next()
+    } else if(UserId !== foundProduct.UserId){
       throw {
         name: "Forbidden",
         msg: "Cannot access",
       };
     }
-    next();
+
+    // if (UserId !== foundProduct.UserId) {
+    //   throw {
+    //     name: "Forbidden",
+    //     msg: "Cannot access",
+    //   };
+    // }
+    // next();
   } catch (err) {
     // console.log(err);
     next(err)

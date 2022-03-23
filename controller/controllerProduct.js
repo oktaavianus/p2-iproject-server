@@ -168,7 +168,6 @@ class ControllerProduct {
     try {
       const id = req.params.ProductId
       // console.log(id);
-      console.log(req.userCres.id, 'ini user cres');
       let foundProduct = await Product.findByPk(id)
       let userFound = await User.findOne({
         where: {
@@ -205,7 +204,7 @@ class ControllerProduct {
     }
   }
 
-  static async deleteNewsById(req, res, next) {
+  static async deleteProductById(req, res, next) {
     // console.log('masuk delete by id');
     try {
       const id = req.params.ProductId;

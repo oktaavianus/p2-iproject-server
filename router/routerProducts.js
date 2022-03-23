@@ -8,7 +8,7 @@ productsRouter.post("/", authentication, ControllerProduct.postProducts)
 productsRouter.get("/:ProductId", ControllerProduct.getProductById)
 productsRouter.put("/:ProductId", authentication, authorization,ControllerProduct.putProductById)
 productsRouter.patch("/:ProductId", authentication, authorizationAdmin, ControllerProduct.patchProduct) //! hanya Admin yg bisa PATCH status
-productsRouter.delete("/:ProductId", authentication, authorization, ControllerProduct.deleteNewsById)
+productsRouter.delete("/:ProductId", authentication, authorization, ControllerProduct.deleteProductById)
 
 
 module.exports = productsRouter
